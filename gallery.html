@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gallery Page</title>
+    <link rel="stylesheet" href="gallery-styles.css">
+    <link rel="stylesheet" href="lightbox.css"> <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/fancybox.min.css">
+
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/images/logo.jpeg" alt="Liquid Layers Logo"> <!-- Your logo image -->
+            </a>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon-container">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main id="gallery">
+        <section class="search-filter">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="filter" onclick="filterGallery()">Filter</button>
+        </section>
+        <section class="gallery-container">
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/image1.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/image1.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                <p >&#x20B9;480<p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/gallery1.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/gallery1.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                    <p >&#x20B9;1800<p>
+                    </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/gallery3.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/gallery3.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                    <p >&#x20B9;600<p>
+                    </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/gallery4.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/gallery4.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                    <p >&#x20B9;480<p>
+                    </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/gallery5.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/gallery5.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                    <p >&#x20B9;80<p>
+                    </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/gallery6.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/gallery6.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                    <p >&#x20B9;250<p>
+                    </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/gallery7.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/gallery7.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                    <p >&#x20B9;500<p>
+                    </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/gallery8.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/gallery8.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                    <p >&#x20B9;5000<p>
+                    </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/gallery9.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/gallery9.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                    <p >&#x20B9;480<p>
+                    </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/gallery10.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/gallery10.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                    <p >&#x20B9;1700<p>
+                    </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/gallery11.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/gallery11.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                    <p >&#x20B9;1700 <p>
+                    </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/gallery19.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/gallery19.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                    <p >&#x20B9;800<p>
+                    </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/gallery13.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/gallery13.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                    <p >&#x20B9;1200<p>
+                    </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/gallery14.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/gallery14.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                    <p >&#x20B9;450<p>
+                    </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/gallery15.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/gallery15.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                    <p >&#x20B9;130<p>
+                    </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/gallery16.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/gallery16.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                    <p >&#x20B9;480<p>
+                    </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/gallery17.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/gallery17.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                    <p >&#x20B9;800<p>
+                    </div>
+            </div>
+            <div class="gallery-item" data-category="photo">
+                <a href="/images/gallery18.jpeg" data-lightbox="gallery" data-title="Image 1 Description">
+                    <img src="/images/gallery18.jpeg" alt="Image 1">
+                </a>
+                <div class="price">
+                    <p >&#x20B9;200<p>
+                    </div>
+            </div>
+
+        </div>
+
+            <div class="gallery-item" data-category="video">
+                <a href="/images/video.mp4" data-lightbox="gallery" data-title="Video 1 Description" data-type="video">
+                    <div class="gallery-item-video">
+                        <img src="/images/image2.jpeg" alt="Video 1"> <!-- Use a thumbnail image for the video -->
+                    </div>
+                </a>
+                <p>Video 1 Description</p>
+            </div>
+            
+            
+            <!-- Add more gallery items here -->
+        </section>
+    </main>
+
+   <!-- Footer -->
+   <footer>
+    <div class="contact-info">
+        <p>Email: <a href="mailto:info@liquidlayers.com">info@liquidlayers.com</a></p>
+        <p>Phone: 7838913530</p>
+    </div>
+    <div class="social-media">
+        <a href="https://www.facebook.com/people/liquid_layers01/100091824746259/" target="_blank" class="fab fa-facebook"></a>
+        <a href="https://www.instagram.com/liquidlayers.store?igsh=NTc4MTIwNjQ2YQ==" target="_blank" class="fab fa-instagram"></a>
+    </div>
+    <div class="newsletter">
+        <p>Subscribe to our newsletter:</p>
+        <form action="#subscribe" method="post">
+            <input type="email" name="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+   
+</footer>
+<script>
+     document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('nav').classList.toggle('active');
+        });
+</script>
+
+    <script src="lightbox.js"></script> <!-- Lightbox JS -->
+    <script src="script.js"></script> <!-- Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/fancybox.umd.js"></script>
+</body>
+</html>

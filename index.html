@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Layers - Resin Art</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.jpeg">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/images/logo.jpeg" alt="Liquid Layers Logo"> <!-- Your logo image -->
+            </a>
+        </div>
+        
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon-container">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Liquid Layers</h1>
+        <strong>By-Sanchi Sharma</strong>
+        <p><strong>Explore the Art of Resin</strong></p>
+        <a href="shop.html" class="cta-button">Shop Now</a>
+    </section>
+
+    <!-- About Resin Art -->
+    <section id="about-resin">
+        <h2>What is Resin Art?</h2>
+        <h2></h2>
+        <p>Resin art involves creating beautiful, unique pieces using resin as a medium. The resin can be tinted and manipulated to create stunning effects and textures.</p>
+        <div class="resin-gallery">
+            <img src="/images/image1.jpeg" alt="Resin Art 1">
+            <img src="/images/image2.jpeg" alt="Resin Art 2">
+            <img src="/images/image3.jpeg" alt="Resin Art 3">
+            <img src="/images/image4.jpeg" alt="Resin Art 4">
+        </div>
+    </section>
+    
+    <!-- Customer Reviews -->
+    <section id="reviews" class="review">
+        <h2>What Our Customers Say</h2>
+        <div class="review-cards">
+            <div class="review-card">
+                <p>"Absolutely stunning work! The resin art pieces I purchased exceeded my expectations."</p>
+                <p class="review-author">- Jane Doe</p>
+            </div>
+            <div class="review-card">
+                <p>"Liquid Layers offers unique and beautiful resin art. Highly recommend!"</p>
+                <p class="review-author">- John Smith</p>
+            </div>
+        </div>
+        <a href="#more-reviews" class="cta-button1">Read More Reviews</a>
+    </section>
+
+    <!-- About Liquid Layers -->
+    <section id="about">
+        <h2>About Liquid Layers</h2>
+        <strong>Liquid Layers is a resin art brand that focuses on creating unique and high-quality resin products. Resin art typically involves pouring resin over various surfaces, such as wood, canvas, or other materials, and then adding pigments, dyes, or other embellishments to create stunning, glossy effects.</strong>
+        <p>For Liquid Layers, the brand might offer a range of products, such as:</p>
+        <p>1. Art Pieces: Custom or pre-designed resin art pieces, like coasters, trays, and wall art.</p>  
+        <p>2. DIY Kits: Resin art kits for enthusiasts who want to create their own pieces.</p>
+        <p>3. Supplies: Resin, pigments, and tools needed for resin art.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:info@liquidlayers.com">info@liquidlayers.com</a></p>
+            <p><strong>Phone:  </strong><a href="tel:+919540940459">9540940459 </a></p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/people/liquid_layers01/100091824746259/" target="_blank" class="fab fa-facebook"></a>
+            <a href="https://www.instagram.com/liquidlayers.store?igsh=NTc4MTIwNjQ2YQ==" target="_blank" class="fab fa-instagram"></a>
+        </div>
+        <div class="newsletter">
+            <p>Subscribe to our newsletter:</p>
+            <form action="#subscribe" method="post">
+                <input type="email" name="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="bottom">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="#contact-info">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- JavaScript for toggle functionality -->
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

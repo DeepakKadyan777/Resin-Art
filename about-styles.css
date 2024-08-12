@@ -1,0 +1,337 @@
+/* Reset some default browser styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background: #f9f9f9;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo img {
+    height: 50px;
+    display: block;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Navigation links styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f1c40f;
+    color: #333;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    background: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+/* Cart Icon Styles */
+.cart-icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.cart-icon i {
+    font-size: 24px;
+}
+
+#cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 5px;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* About Section Styling */
+.about-section {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-section h1 {
+    color: #6a11cb;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-section h2 {
+    color: #6a11cb;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.about-section p {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Team Section Styling */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.team-member {
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member img:hover {
+    transform: scale(1.1);
+}
+
+.team-member h3 {
+    margin-top: 15px;
+    color: #333;
+    font-size: 1.5em;
+    border-radius: 10px;
+    
+}
+.cta-button {
+    background: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.5s;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.team-member p {
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(255, 0, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 0.9em;
+    background-image: url('/images/4.png');
+    background-repeat: no-repeat;
+    color: #000000;
+    background-size: cover;
+    height: 210px;
+}
+
+footer .contact-info {
+    margin-bottom: 20px;
+    
+}
+footer .contact-info p {
+color: #000000;
+padding-top: 10px;
+}
+
+footer .social-media {
+    margin-bottom: 20px;
+}
+
+footer .social-media a {
+    color: #000000;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .newsletter {
+    margin-bottom: 20px;
+}
+
+footer .newsletter input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 400px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+footer .newsletter button {
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+footer .newsletter button:hover {
+    background: #e67e22;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: #f1c40f;
+}
+
+footer .bottom nav ul a {
+    text-align: center;
+    color: #000000;
+    padding-left: 150px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+        padding-left: 10px;
+
+    }
+
+    .menu-toggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background: #fff;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 40px;
+    }
+
+    nav ul li a {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .cart-icon i {
+        font-size: 20px;
+    }
+
+    #cart-count {
+        font-size: 10px;
+        padding: 1px 4px;
+    }
+
+    footer .bottom nav ul a {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}

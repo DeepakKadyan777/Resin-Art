@@ -1,0 +1,32 @@
+* Basic styling for product-list and product-card */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Space between cards */
+}
+
+.product-card {
+    flex: 1 1 calc(50% - 16px); /* 50% width minus the gap */
+    box-sizing: border-box; /* Ensure padding and border are included in the total width */
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%; /* Ensure the image scales with the card */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.product-description {
+    margin-top: 8px;
+    color: #555;
+}
+
+/* Media Query for mobile view (up to 600px wide) */
+@media (max-width: 600px) {
+    .product-card {
+        flex: 1 1 calc(50% - 16px); /* Two products per row */
+    }
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="shop-styles.css">
+    <!-- Include FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/images/logo.jpeg" alt="Liquid Layers Logo"> <!-- Your logo image -->
+            </a>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon-container">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+    <div class="search">
+        <input type="search" id="search" placeholder="Search...">
+        <button><img src="/images/search.png"></button>
+
+    </div>
+    <main>
+        <aside class="filters">
+            <h2>Filters</h2>
+            <div class="filter-range">
+                <label for="price-range">Price Range</label>
+                <input type="range" id="price-range" min="10" max="7000" step="10" value="10">
+                <span id="price-value">$10</span> <!-- Display selected price -->
+            </div>
+            <div class="filter-category">
+                <label for="category">Category</label>
+                <div class="option">
+                <select id="category">
+                    <option value="all">All</option>
+                    <option value="Brass">Brass</option>
+                    <option value="Wall CLock">Wall Clock</option>
+                    <option value="Rakhi">Rakhi</option>
+                </select>
+                </div>
+            </div>
+        </aside>
+        <section class="product-list">
+            <div class="product-card" data-id="1" data-name="Resin Brass" data-price="49.99">
+                <img src="/images/image1.jpeg" alt="Product Image"style="height: 260px;">
+                <h3>Resin Brass</h3>
+                <p>$49.99</p>
+                <p class="product-description">A high-quality resin brass item with a polished finish, perfect for all your crafting needs.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-id="2" data-name="Resin Brass 2" data-price="69.99">
+                <img src="/images/image2.jpeg" alt="Product Image" style="height: 260px;">
+                <h3>Resin 2</h3>
+                <p>$69.99</p>
+                <p class="product-description">An exquisite resin piece with intricate designs, ideal for decorative purposes.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-id="3" data-name="Resin Brass 3" data-price="9.99">
+                <img src="/images/image3.jpeg" alt="Product Image" style="height: 260px;">
+                <h3>Resin 3</h3>
+                <p>$9.99</p>
+                <p class="product-description">Affordable resin brass, suitable for small projects and DIY crafts.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-id="4" data-name="Resin Brass 4" data-price="39.99">
+                <img src="/images/image4.jpeg" alt="Product Image" style="height: 260px;">
+                <h3>Resin 4</h3>
+                <p>$39.99</p>
+                <p class="product-description">Versatile resin brass with a unique finish, great for collectors and hobbyists.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-id="5" data-name="Resin Brass 5" data-price="89.99">
+                <img src="/images/gallery15.jpeg" alt="Product Image" style="height: 260px;">
+                <h3>Resin Brass</h3>
+                <p>$89.99</p>
+                <p class="product-description">Premium resin brass piece with elaborate details and craftsmanship.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-id="6" data-name="Resin Brass" data-price="49.99">
+                <img src="/images/gallery18.jpeg" alt="Product Image" style="height: 260px;">
+                <h3>Resin Brass</h3>
+                <p>$49.99</p>
+                <p class="product-description">Standard resin brass item, perfect for everyday use and small projects.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        
+            <!-- Repeat product-card for more products, ensuring each has a unique data-id -->
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:info@liquidlayers.com">info@liquidlayers.com</a></p>
+            <p>Phone: 7838913530</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/people/liquid_layers01/100091824746259/" target="_blank" class="fab fa-facebook"></a>
+            <a href="https://www.instagram.com/liquidlayers.store?igsh=NTc4MTIwNjQ2YQ==" target="_blank" class="fab fa-instagram"></a>
+        </div>
+        <div class="newsletter">
+            <p>Subscribe to our newsletter:</p>
+            <form action="#subscribe" method="post">
+                <input type="email" name="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('nav').classList.toggle('active');
+        });
+        // Function to get the cart from localStorage
+        function getCart() {
+            return JSON.parse(localStorage.getItem('cart')) || [];
+        }
+
+        // Function to save the cart to localStorage
+        function saveCart(cart) {
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        // Update the cart count display
+        function updateCartCount() {
+            const cart = getCart();
+            document.getElementById('cart-count').textContent = cart.length;
+        }
+
+        // Add event listener to 'Add to Cart' buttons
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const productCard = this.closest('.product-card');
+                const product = {
+                    id: productCard.getAttribute('data-id'),
+                    name: productCard.getAttribute('data-name'),
+                    price: productCard.getAttribute('data-price')
+                };
+
+                const cart = getCart();
+                cart.push(product);
+                saveCart(cart);
+                updateCartCount();
+            });
+        });
+
+        // Initial update of cart count
+        updateCartCount();
+
+        // Price range filtering
+        const priceRangeInput = document.getElementById('price-range');
+        const priceValueDisplay = document.getElementById('price-value');
+
+        priceRangeInput.addEventListener('input', function() {
+            const selectedPrice = parseFloat(this.value);
+            priceValueDisplay.textContent = `$${selectedPrice}`;
+
+            document.querySelectorAll('.product-card').forEach(card => {
+                const productPrice = parseFloat(card.getAttribute('data-price'));
+                card.style.display = (productPrice <= selectedPrice) ? 'block' : 'none';
+            });
+        });
+
+        // Set initial price value display
+        priceValueDisplay.textContent = `$${priceRangeInput.value}`;
+        //search option
+        document.querySelector('search')
+    </script>
+</body>
+</html>
